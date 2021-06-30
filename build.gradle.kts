@@ -23,6 +23,8 @@ dependencies {
 	implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
 	implementation("org.webjars:jquery:3.6.0")
 	implementation("org.webjars:bootstrap:5.0.1")
+	implementation("com.cloudant:cloudant-client:2.19.2")
+	implementation("com.squareup.okhttp3:okhttp-urlconnection:3.12.12")
 	developmentOnly("org.springframework.boot:spring-boot-devtools")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 
