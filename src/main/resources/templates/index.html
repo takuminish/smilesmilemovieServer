@@ -10,6 +10,39 @@
     <title>スマイルスマイル動画</title>
 </head>
 <body>
-<button type="button" class="btn btn-primary">Primary</button>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24" class="d-inline-block align-top">
+            スマイルスマイル動画
+        </a>
+    </div>
+</nav>
+
+<div class="card mx-auto w-75 mb-4">
+    <div class="card-header">
+        〜スマイルスマイル動画の使い方〜
+    </div>
+    <div class="card-body">
+        <blockquote class="blockquote mb-0">
+            <p>1. テキストエリアにコメントを入力しよう。</p>
+            <p>2. コメントの色をテキストエリア左のカラーピッカーで設定しよう。</p>
+            <p>3. コメント送信の準備ができたら、送信ボタンをクリックだ!コメントが送信されるよ!</p>
+            <footer class="blockquote-footer">某動画サイトとは一切関係がありません。 </footer>
+        </blockquote>
+    </div>
+</div>
+<form class="form-inline mx-auto w-75 mb-4">
+    <div class="input-group">
+        <input type="color" class="form-control form-control-color" id="colorInput" value="#563d7c" title="Choose your color">
+        <input type="text" class="form-control" id="commentInput" onchange="onChangeComment()">
+        <button type="button" class="btn btn-primary">Submit</button>
+    </div>
+</form>
+
+<div class="mx-auto w-75 mb-4" style="font-size: 30px;font-weight: 800;
+    text-shadow: 1px 1px 1px #000000, -1px 1px 1px #000000, 1px -1px 1px #000000, -1px -1px 1px #000000, 1px 0px 1px #000000, 0px 1px 1px #000000, -1px 0px 1px #000000, 0px -1px 1px #000000;
+    color: red;" id="commentPreview">comment</div>
+
 </body>
 </html>
