@@ -27,6 +27,8 @@ dependencies {
 	implementation("com.squareup.okhttp3:okhttp-urlconnection:3.12.12")
 	developmentOnly("org.springframework.boot:spring-boot-devtools")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
+	implementation("org.apache.commons:commons-lang3:3.1")
+	implementation("com.squareup.okhttp3:okhttp-urlconnection:4.0.1")
 
 }
 
