@@ -25,6 +25,7 @@ class CommentService {
             tmp.isViewed = true;
             this.commentRepository.updateComment(tmp);
         }
+
         return list;
     }
 }

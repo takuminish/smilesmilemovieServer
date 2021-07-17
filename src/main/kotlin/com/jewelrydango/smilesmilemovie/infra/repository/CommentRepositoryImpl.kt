@@ -1,17 +1,13 @@
 package com.jewelrydango.smilesmilemovie.infra.repository
 
-import com.cloudant.client.api.ClientBuilder
-import com.cloudant.client.api.Database
 import com.cloudant.client.api.model.Response
 import com.cloudant.client.api.query.Expression
 import com.cloudant.client.api.query.QueryBuilder
-import com.jewelrydango.smilesmilemovie.config.CloundantConfig
 import com.jewelrydango.smilesmilemovie.domain.model.SmileComment
 import com.jewelrydango.smilesmilemovie.domain.repository.CommentRepository
 import com.jewelrydango.smilesmilemovie.infra.externalclient.CloundantClient
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.stereotype.Repository
-import java.net.URL
 
 @Repository
 class CommentRepositoryImpl : CommentRepository{
@@ -20,6 +16,7 @@ class CommentRepositoryImpl : CommentRepository{
     lateinit var cloudantClient: CloundantClient;
 
     override fun saveComment(comment: SmileComment): Boolean {
+        System.out.println(comment);
         val response:Response =  this.cloudantClient.save(comment);
         System.out.println(response.toString());
 

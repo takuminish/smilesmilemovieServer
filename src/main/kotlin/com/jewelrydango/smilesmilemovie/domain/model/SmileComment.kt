@@ -4,16 +4,15 @@ import org.apache.commons.lang3.RandomStringUtils
 import java.io.Serializable
 
 class SmileComment: Serializable {
+     var _id: String = "";
 
-    var _id: String = "";
+     var _rev: String? = null;
 
-    var _rev: String = "";
+     var comment: String = "";
 
-    var comment: String = "";
+     var color: String = "";
 
-    var color: String = "";
-
-    var isViewed: Boolean = false;
+     var isViewed: Boolean = false;
 
     constructor(comment: String, color: String) {
         this._id = "smilesmilemovie:${RandomStringUtils.randomAlphanumeric(10)}"

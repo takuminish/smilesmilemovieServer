@@ -29,6 +29,8 @@ dependencies {
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 	implementation("org.apache.commons:commons-lang3:3.1")
 	implementation("com.squareup.okhttp3:okhttp-urlconnection:4.0.1")
+	implementation("javax.validation:validation-api:2.0.1.Final")
+	implementation ("org.springframework.boot:spring-boot-starter-validation:2.5.2")
 
 }
 
