@@ -26,6 +26,13 @@ class CommentRepositoryImpl : CommentRepository{
         return true;
     }
 
+    override fun updateComment(comment: SmileComment): Boolean {
+        val response:Response =  this.cloudantClient.update(comment);
+        System.out.println(response.toString());
+
+        return true;
+    }
+
     override fun findCommentListByNotViewed(): List<SmileComment> {
         return this.cloudantClient.query(QueryBuilder(Expression.eq("isViewed", false)).build(), SmileComment::class.java).docs;
     }

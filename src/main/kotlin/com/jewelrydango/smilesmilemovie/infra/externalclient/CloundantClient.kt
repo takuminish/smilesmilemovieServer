@@ -36,4 +36,8 @@ class CloundantClient {
     fun save(target: Any): Response {
         return this.db.save(target);
     }
+
+    fun update(target: Any): Response {
+        return this.db.update(target);
+    }
 }

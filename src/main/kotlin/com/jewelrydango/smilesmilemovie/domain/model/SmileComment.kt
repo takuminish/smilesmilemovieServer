@@ -5,13 +5,15 @@ import java.io.Serializable
 
 class SmileComment: Serializable {
 
-    var _id: String;
+    var _id: String = "";
 
-    var comment: String;
+    var _rev: String = "";
 
-    var color: String;
+    var comment: String = "";
 
-    var isViewed: Boolean;
+    var color: String = "";
+
+    var isViewed: Boolean = false;
 
     constructor(comment: String, color: String) {
         this._id = "smilesmilemovie:${RandomStringUtils.randomAlphanumeric(10)}"

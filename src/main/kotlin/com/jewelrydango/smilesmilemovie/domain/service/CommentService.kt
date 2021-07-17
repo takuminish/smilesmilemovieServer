@@ -19,6 +19,12 @@ class CommentService {
     }
 
     fun findCommentListByNotViewed(): List<SmileComment> {
-        return this.commentRepository.findCommentListByNotViewed();
+        val list: List<SmileComment> = this.commentRepository.findCommentListByNotViewed();
+        list.map{
+            val tmp = it;
+            tmp.isViewed = true;
+            this.commentRepository.updateComment(tmp);
+        }
+        return list;
     }
 }

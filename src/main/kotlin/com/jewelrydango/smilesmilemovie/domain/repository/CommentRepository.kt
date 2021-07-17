@@ -7,5 +7,7 @@ interface CommentRepository {
 
     fun saveComment(comment: SmileComment):Boolean;
 
+    fun updateComment(comment: SmileComment): Boolean;
+
     fun findCommentListByNotViewed():List<SmileComment>;
 }
