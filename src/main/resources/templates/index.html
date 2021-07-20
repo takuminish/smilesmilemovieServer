@@ -39,6 +39,7 @@
               if(request.status == 200) {
                 document.getElementById('errorAlert').style.display = 'none';
                 document.getElementById('successAlert').style.display = 'block';
+                document.getElementById('commentInput').value = ''
                 setTimeout(() => {
                   document.getElementById('successAlert').style.display = 'none';
                 },3000);
