@@ -38,6 +38,7 @@ class CommentController {
 
     @GetMapping("/comments")
     @ResponseBody
+    @CrossOrigin
     fun getCommentListByNotViewed(@RequestParam token: String?): List<SmileComment> {
         if (token != this.commenConfig.token) {
             return listOf<SmileComment>()     ;
