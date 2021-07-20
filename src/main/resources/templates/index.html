@@ -39,9 +39,15 @@
               if(request.status == 200) {
                 document.getElementById('errorAlert').style.display = 'none';
                 document.getElementById('successAlert').style.display = 'block';
+                setTimeout(() => {
+                  document.getElementById('successAlert').style.display = 'none';
+                },3000);
               } else {
                document.getElementById('errorAlert').style.display = 'block';
                document.getElementById('successAlert').style.display = 'none';
+               setTimeout(() => {
+                  document.getElementById('errorAlert').style.display = 'none';
+                },3000);
               }
             }
 
